@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-p {
-}
-
 .subtitle {
   opacity: 0.5;
 }
@@ -25,27 +22,25 @@ p {
 
 body {
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 100vw;
   height: 100vh;
   background-color: hsl(210, 46%, 95%);
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
 }
 
 #container {
-  display: grid;
-  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-  gap: 30px;
-  height: 572px;
-  width: 1110px;
+  flex-direction: column;
+  gap: 24px;
+  padding: 71px 24px;
 }
 
 .box {
-  background-color: aqua;
-  border-radius: 7%;
+  border-radius: 7px;
   flex-direction: column;
-  padding: 24px 32px;
+  padding: 24px 33px;
   gap: 16px;
 }
 
@@ -67,17 +62,16 @@ body {
   grid-column: 1 / span 2;
   color: hsl(0, 0%, 100%);
   background-color: hsl(263, 55%, 52%);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0;
 }
 
 #jonathan {
   color: hsl(0, 0%, 100%);
   background-color: hsl(217, 19%, 35%);
 }
-#kira {
-  grid-area: 1 / 4 / span 2 / 4;
-  color: hsl(217, 19%, 35%);
-  background-color: hsl(0, 0%, 100%);
-}
+
 #jeanette {
   color: hsl(217, 19%, 35%);
   background-color: hsl(0, 0%, 100%);
@@ -87,4 +81,23 @@ body {
   grid-area: 2 / 2 / 2 / span 2;
   background-color: hsl(219, 29%, 14%);
   color: hsl(0, 0%, 100%);
+}
+
+#kira {
+  grid-area: 1 / 4 / span 2 / 4;
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    align-items: center;
+  }
+  #container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 30px;
+    height: 572px;
+    width: 1110px;
+  }
 }
