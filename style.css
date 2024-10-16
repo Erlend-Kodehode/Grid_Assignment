@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+}
+
+.subtitle {
+  opacity: 0.5;
+}
+.description {
+  opacity: 0.7;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+#container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  gap: 30px;
+  height: 572px;
+  width: 1110px;
+}
+
+.box {
+  background-color: aqua;
+  border-radius: 7%;
+  flex-direction: column;
+  padding: 24px 32px;
+  gap: 16px;
+}
+
+.profile {
+  gap: 13px;
+}
+
+.profile > img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.profile > div {
+  flex-direction: column;
+}
+
+#daniel {
+  grid-column: 1 / span 2;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(263, 55%, 52%);
+}
+
+#jonathan {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 19%, 35%);
+}
+#kira {
+  grid-area: 1 / 4 / span 2 / 4;
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+}
+#jeanette {
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+#patrick {
+  grid-area: 2 / 2 / 2 / span 2;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+}

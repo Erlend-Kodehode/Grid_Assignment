@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonials Grid</title>
   </head>
 
-  <body>
-    <div id="daniel" class="box">
-      <div class="profile">
-        <div>
+  <body class="flex">
+    <div id="container">
+      <div id="daniel" class="box flex">
+        <div class="profile flex">
           <img src="images/image-daniel.jpg" alt="Daniel's profile picutre" />
-          <p>Daniel Clifford</p>
-          <p>Verified Graduate</p>
+          <div class="flex">
+            <p>Daniel Clifford</p>
+            <p class="subtitle">Verified Graduate</p>
+          </div>
         </div>
         <p class="title">
           I received a job offer mid-course, and the subjects I learned were
@@ -30,16 +43,16 @@
           a Software Engineer at a VR startup. ”
         </p>
       </div>
-    </div>
-    <div id="jonathan" class="box">
-      <div class="profile">
-        <div>
+      <div id="jonathan" class="box flex">
+        <div class="profile flex">
           <img
             src="images/image-jonathan.jpg"
             alt="Jonathan's profile picutre"
           />
-          <p>Jonathan Walters</p>
-          <p>Verified Graduate</p>
+          <div class="flex">
+            <p>Jonathan Walters</p>
+            <p class="subtitle">Verified Graduate</p>
+          </div>
         </div>
         <p class="title">The team was very supportive and kept me motivated</p>
         <p class="description">
@@ -48,13 +61,13 @@
           investments I’ve made in myself. ”
         </p>
       </div>
-    </div>
-    <div id="kira" class="box">
-      <div class="profile">
-        <div>
+      <div id="kira" class="box flex">
+        <div class="profile flex">
           <img src="images/image-kira.jpg" alt="Kira's profile picutre" />
-          <p>Kira Whittle</p>
-          <p>Verified Graduate</p>
+          <div class="flex">
+            <p>Kira Whittle</p>
+            <p class="subtitle">Verified Graduate</p>
+          </div>
         </div>
         <p class="title">
           Such a life-changing experience. Highly recommended!
@@ -73,16 +86,16 @@
           developer after receiving multiple offers. 100% recommend! ”
         </p>
       </div>
-    </div>
-    <div id="jeanette" class="box">
-      <div class="profile">
-        <div>
+      <div id="jeanette" class="box flex">
+        <div class="profile flex">
           <img
             src="images/image-jeanette.jpg"
             alt="Jeanette's profile picutre"
           />
-          <p>Jeanette Harmon</p>
-          <p>Verified Graduate</p>
+          <div class="flex">
+            <p>Jeanette Harmon</p>
+            <p class="subtitle">Verified Graduate</p>
+          </div>
         </div>
         <p class="title">An overall wonderful and rewarding experience</p>
         <p class="description">
@@ -90,13 +103,13 @@
           enjoy, and make a good living while doing something I love. ”
         </p>
       </div>
-    </div>
-    <div id="patrick" class="box">
-      <div class="profile">
-        <div>
+      <div id="patrick" class="box flex">
+        <div class="profile flex">
           <img src="images/image-patrick.jpg" alt="Patrick's profile picutre" />
-          <p>Patrick Abrams</p>
-          <p>Verified Graduate</p>
+          <div class="flex">
+            <p>Patrick Abrams</p>
+            <p class="subtitle">Verified Graduate</p>
+          </div>
         </div>
         <p class="title">
           Awesome teaching support from TAs who did the bootcamp themselves.
@@ -113,7 +126,6 @@
         </p>
       </div>
     </div>
-
     <!-- Daniel Clifford Verified Graduate I received a job offer mid-course, and the
     subjects I learned were current, if not more so, in the company I joined. I
     honestly feel I got every penny’s worth. “ I was an EMT for many years
